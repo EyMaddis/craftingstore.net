@@ -14,6 +14,9 @@ If someone wants to pick it up, feel free to message us, until that it is avaiab
 
 [![Creative Commons BY-NC-SA](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
+Features
+=================
+To see a somewhat recent feature list, visit our old [Bukkit Dev project overview](http://dev.bukkit.org/bukkit-plugins/minecraftshop/).
 
 
 How to use it
@@ -25,6 +28,7 @@ How to use it
 * edit each file that contains the phrase 'edited for github', for example config/config.inc.php
 * create a wildcard subdomain (in our case: *.craftingstore.net) leading to the root directory of the web application
 * (create secure.yourdomain.com leading to the root of the web app) - probably not necessary due to the last step
+* you should be able to go to secure.yourdomain.com or secure.yourdomain.com/megaadmin to log in and play around
 
 PHP.ini Settings:
 =================
