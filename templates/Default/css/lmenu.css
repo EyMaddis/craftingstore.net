@@ -1,0 +1,148 @@
+.lmenu .groups {
+
+}
+.lmenu .buyGroup1.ui-accordion .ui-accordion-content {
+    padding: 0;
+}
+/*
+.lmenu li {
+	padding: 0px;
+	border-top: dashed 1px #333;
+	list-style: none;
+}
+.lmenu li:hover {
+	background-color: #fff;
+}
+*/
+.lmenu .grouplink {
+	display: block;
+	padding: 10px;
+}
+.lmenu .singlelink {
+	display: block;
+	padding: 10px;
+}
+
+.lmenu  {
+	border:none;
+}
+.lmenu .buyGroup div {
+	padding: 0px 3px 2px 13px;
+	width: auto;
+}
+/*
+ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active
+*/
+.lmenu .buyGroup.accordion-header,
+.lmenu .buyGroup .accordion-header-active,
+.lmenu .buyGroup .ui-state-active,
+.lmenu .buyGroup .ui-widget-content,
+.lmenu .buyGroup .ui-widget-header,
+.lmenu .buyGroup .ui-accordion-content,
+.lmenu .buyGroup .ui-helper-reset,
+.lmenu .buyGroup .ui-corner-bottom,
+.lmenu .buyGroup .ui-accordion-content-active{
+	border:none;
+}
+
+/* buyGroupLayer1 */
+.lmenu .buyGroupLayer1 .ui-state-default, /* Kein Fokus, nicht offen */
+.lmenu .buyGroupLayer1 .ui-state-active, /* Kein Fokus, offen */
+.lmenu .buyGroupLayer1 .ui-state-focus, /* Mit Tabulator drauf */
+.lmenu .buyGroupLayer1 .ui-widget-content{ /* Hintergrund */
+	background: none repeat scroll 0 0 #bbb;
+	padding: 0;
+}
+.lmenu .buyGroupLayer1 .ui-state-hover{ /* Maus drüber */
+	background: none repeat scroll 0 0 #999;
+}
+.lmenu .buyGroupLayer1 .ui-state-default a, /* Kein Fokus, nicht offen */
+.lmenu .buyGroupLayer1 .ui-state-active a, /* Kein Fokus, offen */
+.lmenu .buyGroupLayer1 .ui-state-focus a, /* Mit Tabulator drauf */
+.lmenu .buyGroupLayer1 .ui-widget-content a{ /* Hintergrund */
+	color: #000;
+}
+.lmenu .buyGroupLayer1 .ui-state-hover{ /* Maus drüber */
+	background: none repeat scroll 0 0 #999;
+}
+/* Ende buyGroupLayer1 */
+
+/* buyGroupLayer2 */
+.lmenu .buyGroupLayer2 .ui-state-default, /* Kein Fokus, nicht offen */
+.lmenu .buyGroupLayer2 .ui-state-active, /* Kein Fokus, offen */
+.lmenu .buyGroupLayer2 .ui-state-focus, /* Mit Tabulator drauf */
+.lmenu .buyGroupLayer2 .ui-widget-content{ /* Hintergrund */
+	background: none repeat scroll 0 0 #ccc;
+	padding: 0;
+}
+
+.lmenu .buyGroupLayer2 .ui-state-default a, /* Kein Fokus, nicht offen */
+.lmenu .buyGroupLayer2 .ui-state-active a, /* Kein Fokus, offen */
+.lmenu .buyGroupLayer2 .ui-state-focus a, /* Mit Tabulator drauf */
+.lmenu .buyGroupLayer2 .ui-widget-content a{ /* Hintergrund */
+	color: #000;
+}
+.lmenu .buyGroupLayer2 .ui-state-hover{ /* Maus drüber */
+	background: none repeat scroll 0 0 #999;
+}
+/* Ende buyGroupLayer2 */
+
+/* buyGroupLayer3 */
+.lmenu .buyGroupLayer3 .ui-state-default, /* Kein Fokus, nicht offen */
+.lmenu .buyGroupLayer3 .ui-state-active, /* Kein Fokus, offen */
+.lmenu .buyGroupLayer3 .ui-state-focus, /* Mit Tabulator drauf */
+.lmenu .buyGroupLayer3 .ui-widget-content{ /* Hintergrund */
+	background: none repeat scroll 0 0 #ddd;
+	padding: 0;
+}
+
+.lmenu .buyGroupLayer3 .ui-state-default a, /* Kein Fokus, nicht offen */
+.lmenu .buyGroupLayer3 .ui-state-active a, /* Kein Fokus, offen */
+.lmenu .buyGroupLayer3 .ui-state-focus a, /* Mit Tabulator drauf */
+.lmenu .buyGroupLayer3 .ui-widget-content a{ /* Hintergrund */
+	color: #000;
+}
+.lmenu .buyGroupLayer3 .ui-state-hover{ /* Maus drüber */
+	background: none repeat scroll 0 0 #999;
+}
+/* Ende buyGroupLayer3 */
+
+/* buyGroupLayer4 */
+.lmenu .buyGroupLayer4 .ui-state-default, /* Kein Fokus, nicht offen */
+.lmenu .buyGroupLayer4 .ui-state-active, /* Kein Fokus, offen */
+.lmenu .buyGroupLayer4 .ui-state-focus, /* Mit Tabulator drauf */
+.lmenu .buyGroupLayer4 .ui-widget-content{ /* Hintergrund */
+	background: none repeat scroll 0 0 #eee;
+	padding: 0;
+}
+
+.lmenu .buyGroupLayer4 .ui-state-default a, /* Kein Fokus, nicht offen */
+.lmenu .buyGroupLayer4 .ui-state-active a, /* Kein Fokus, offen */
+.lmenu .buyGroupLayer4 .ui-state-focus a, /* Mit Tabulator drauf */
+.lmenu .buyGroupLayer4 .ui-widget-content a{ /* Hintergrund */
+	color: #000;
+}
+.lmenu .buyGroupLayer4 .ui-state-hover{ /* Maus drüber */
+	background: none repeat scroll 0 0 #999;
+}
+/* Ende buyGroupLayer4 */
+
+/* buyGroupLayer5 */
+.lmenu .buyGroupLayer5 .ui-state-default, /* Kein Fokus, nicht offen */
+.lmenu .buyGroupLayer5 .ui-state-active, /* Kein Fokus, offen */
+.lmenu .buyGroupLayer5 .ui-state-focus, /* Mit Tabulator drauf */
+.lmenu .buyGroupLayer5 .ui-widget-content{ /* Hintergrund */
+	background: none repeat scroll 0 0 #fff;
+	padding: 0;
+}
+
+.lmenu .buyGroupLayer5 .ui-state-default a, /* Kein Fokus, nicht offen */
+.lmenu .buyGroupLayer5 .ui-state-active a, /* Kein Fokus, offen */
+.lmenu .buyGroupLayer5 .ui-state-focus a, /* Mit Tabulator drauf */
+.lmenu .buyGroupLayer5 .ui-widget-content a{ /* Hintergrund */
+	color: #000;
+}
+.lmenu .buyGroupLayer5 .ui-state-hover{ /* Maus drüber */
+	background: none repeat scroll 0 0 #999;
+}
+/* Ende buyGroupLayer5 */

@@ -1,0 +1,16 @@
+input.loginPassword.success
+{
+	border-color:#00FF00;
+	background-color:#00FF00;
+}
+input.loginPassword.error
+{
+	border-color:#FF0000;
+	background-color:#FF0000;
+}
+.panel ul {
+	list-style-type: none;
+}
+.panel .LoginBox div {
+	text-align: right;
+}

@@ -1,0 +1,92 @@
+/* Navigaion */
+._ITEMBOX .itemNavigation{
+	background-color: #F0F0F0;
+	border-radius: 13px;
+	margin: 3px;
+	padding: 5px;
+}
+
+/* Die gelisteten Items */
+._ITEMBOX .items {
+	clear:both;
+	/* background-color: #FFF; */
+	/* border: solid 1px #CCC; */
+	width: 100%;
+	overflow:auto;
+}
+._ITEMBOX .singleItem {
+	background-color: #F0F0F0;
+	/*border: solid 1px #000;*/
+	border-radius: 13px;
+	width: 158px;
+	/*height: 250px;*/
+	float:left;
+	margin: 3px;
+	padding: 10px;
+}
+
+._ITEMBOX .singleItem .ItemPopularity {
+	font-size:8pt;
+	height:14px;
+	overflow: visible;
+	float:left;
+}
+._ITEMBOX .singleItem .ItemCategory {
+	font-size:8pt;
+	text-align:right;
+	height:14px;
+	overflow: visible;
+}
+._ITEMBOX .singleItem .ItemLabel {
+	height: 19px;
+	overflow: visible;
+	text-shadow:0 0 2px #666666;
+}
+._ITEMBOX .singleItem .itemImage {
+	margin: 5px 25px;
+	width:96px;
+	height:96px;
+	border:0;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+._ITEMBOX .itemButtons {
+	margin-top: 10px;
+	width: 100%;
+	clear: both;
+	padding-top: 5px;
+}
+
+/* Preis-Label */
+._ITEMBOX .ItemPrice {
+	float: right;
+	margin-top: -54px;
+	margin-left:80px;
+	margin-right:10px;
+	position: absolute;
+	padding-top:23px;
+	padding-bottom: 5px;
+	padding-right: 3px;
+	text-align:right;
+	width: 50px;
+	color:white;	
+	background: url(./images/pricetag-blue.png) no-repeat bottom right;
+}
+._ITEMBOX .SetPrice {
+	background: url(./images/pricetag-red.png) no-repeat bottom right;
+}
+._ITEMBOX .SpecialPrice {
+	background: url(./images/pricetag-orange.png) no-repeat bottom right;
+}
+
+/* Kauf-Button */
+._ITEMBOX .Button {
+	margin-top: 2px;
+}
+._ITEMBOX .CartButton {
+	float: right;
+}
+/* Details-Button */
+._ITEMBOX .DetailsButton {
+	float: left;
+}

@@ -1,0 +1,21 @@
+# Get mod_rewrite going
+Options -MultiViews +FollowSymLinks -Indexes
+RewriteEngine On
+RewriteBase /
+
+# changed for github
+
+	# nicht existierende Dateien auf minecraftshop.net/index.php?error=404 umleiten
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-f
+
+	#Zugriff auf tpl- und class.php-Dateien verbieten, ggf. auch andere
+#RewriteCond %{REQUEST_FILENAME} (.tpl|.class.php)$ [NC]
+
+	#Zugriff auf bestimmte Dateien/Ordner erlauben
+RewriteCond %{REQUEST_URI} !^((/)|(/index.php){1}.*|/test.php|/heidelberg.jpg|/heidelberg1.jpg|/heidelberg2.jpg|/download/craftingstore.jar|/serverapi.php|/tmp_img.php|/configgenerator.php|/lib/Payment/Paypal/ipn.php|(/templates/){1}.*(?<!(\.tpl))|(/images/).*|(/betainvite/){1}.*(?<!(\.txt)))$ [NC]
+RewriteRule ^(.*)$ index.php?error=404 [L,QSA]
+
+
+# RewriteCond  %{HTTP_HOST}  ^(.*)\.minecraftshop\.net$
+# RewriteRule ^(.*)$ index.php?shop=%1 [L,NC,QSA]

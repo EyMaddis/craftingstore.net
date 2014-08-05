@@ -1,0 +1,105 @@
+table.cartInfo img{
+	width:16px;
+	height:16px;
+}
+table.cartInfo td{
+	padding-bottom: 5px;
+}
+table.cartInfo td:nth-child(1){
+	padding-right: 5px;
+	text-align: left;
+}
+table.cartInfo td:nth-child(2){
+	width: 100%;
+}
+table.cartInfo td:nth-child(3){
+	text-align: right;
+}
+
+
+table.cartOverview{
+    padding: 10px 0;
+    width:100%;
+    text-align: left;
+}
+table.cartOverview td, table.cartOverview  th{
+    padding: 10px;
+}
+table.cartOverview th{
+    border-bottom: dashed 2px #999;
+    background: #eee;
+    border-right: dashed 1px #999;
+}
+table.cartOverview th:first-child{
+    border-radius: 10px 0px 0px 0px;
+}
+table.cartOverview th:last-child{
+    border-radius: 0px 10px 0px 0px;
+    border-right: none;
+}
+table.cartOverview td{
+    border-right: dashed 1px #999;
+}
+table.cartOverview td:nth-child(3),
+table.cartOverview td:nth-child(4){
+	text-align:right;
+}
+table.cartOverview input[type=text]{
+	text-align:right;
+    width:35px;
+}
+
+table.cartOverview  td:first-child{
+    text-align: center;
+}
+table.cartOverview  td:last-child{
+    border-right: none;
+}
+table.cartOverview tr.total td{
+    height: 30px;
+    font-weight: bold;
+    background: #eee;
+    border: solid 1px #eee;
+    border-top: dashed 2px #999;
+    border-right: dashed 1px #999;
+}
+table.cartOverview tr.total td:first-child{
+    border-radius: 0px 0px 0px 10px;
+}
+table.cartOverview tr.total td:last-child{
+    border-radius: 0px 0px 10px 0px;
+    border-right: none;
+	 text-align:right;
+}
+table.cartOverview tr.total td.totalCostsLabel{
+    text-align: right;
+}
+table.cartOverview tr.total td.totalCostsLabel{
+    text-align: right;
+    padding-right: 10px;
+}
+#_CART_CONTENT  .left{
+	float:left;
+}
+#_CART_CONTENT  .right{
+	float:right;
+}
+#_CART_CONTENT .CartButton {
+}
+#_CART_CONTENT .CartLink {
+	margin:4px 0;
+}
+
+.shopagreement{
+    width: 500px;
+    border: solid 1px #999;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+input[name=agree]{
+    margin-left: 20px;
+    margin-right: 5px;
+}

@@ -1,0 +1,8 @@
+[22-Jan-2013 16:42:09] PHP Warning:  fopen(): open_basedir restriction in effect. File(ipn.log) is not within the allowed path(s): (/var/www/vhosts/minecraftshop.net/httpdocs/live/:/tmp/) in /var/www/vhosts/minecraftshop.net/httpdocs/live/lib/Payment/Paypal/ipn.php on line 26
+[22-Jan-2013 16:42:09] PHP Warning:  fopen(ipn.log): failed to open stream: Operation not permitted in /var/www/vhosts/minecraftshop.net/httpdocs/live/lib/Payment/Paypal/ipn.php on line 26
+[22-Jan-2013 16:42:09] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /var/www/vhosts/minecraftshop.net/httpdocs/live/lib/Payment/Paypal/ipn.php on line 27
+[22-Jan-2013 16:42:09] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /var/www/vhosts/minecraftshop.net/httpdocs/live/lib/Payment/Paypal/ipn.php on line 28
+[31-Jan-2013 16:39:32] PHP Warning:  fopen(): open_basedir restriction in effect. File(ipn.log) is not within the allowed path(s): (/var/www/vhosts/minecraftshop.net/httpdocs/live/:/tmp/) in /var/www/vhosts/minecraftshop.net/httpdocs/live/lib/Payment/Paypal/ipn.php on line 26
+[31-Jan-2013 16:39:32] PHP Warning:  fopen(ipn.log): failed to open stream: Operation not permitted in /var/www/vhosts/minecraftshop.net/httpdocs/live/lib/Payment/Paypal/ipn.php on line 26
+[31-Jan-2013 16:39:32] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /var/www/vhosts/minecraftshop.net/httpdocs/live/lib/Payment/Paypal/ipn.php on line 27
+[31-Jan-2013 16:39:32] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /var/www/vhosts/minecraftshop.net/httpdocs/live/lib/Payment/Paypal/ipn.php on line 28

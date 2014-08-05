@@ -1,0 +1,182 @@
+/*
+Name: Sliding Login Panel with jQuery 1.3.2
+Author: Jeremie Tisseau
+Author URI: http://web-kreation.com/
+Date: March 26, 2009
+Version: 1.0
+
+	Copyright 2009 Jeremie Tisseau
+	"Sliding Login Panel with jQuery 1.3.2" is distributed under the GNU General Public License version 3:
+	http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+/***** clearfix *****/
+.toppanel .clear {clear: both;height: 0;line-height: 0;}
+.toppanel .clearfix:after {
+	content: ".";
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.toppanel .clearfix {display: inline;}
+/* Hides from IE-mac */
+* html .clearfix {height: 1%;}
+/* End hide from IE-mac */
+
+/* Panel Tab/button */
+.toppanel .tab {
+  	background: url(./images/tab_b.png) repeat-x 0 0;
+	height: 42px;
+	position: relative;
+	top: 0;
+	z-index: 999;
+}
+
+.toppanel .tab ul.login {
+	display: block;
+	position: relative;
+  	float: right;
+  	clear: right;
+  	height: 42px;
+	width: auto;
+  	font-weight: bold;
+	line-height: 42px;
+	margin: 0;
+	/*right: 150px;*/
+  	color: white;
+  	font-size: 80%;
+	text-align: center;
+}
+
+.toppanel .tab ul.login li.left {
+  	background: url(./images/tab_l.png) no-repeat left 0;
+  	height: 42px;
+	width: 30px;
+	padding: 0;
+	margin: 0;
+  	display: block;
+	float: left;
+}
+
+.toppanel .tab ul.login li.right {
+  	background: url(./images/tab_r.png) no-repeat left 0;
+  	height: 42px;
+	width: 30px;
+	padding: 0;
+	margin: 0;
+  	display: block;
+	float: left;
+}
+
+.toppanel .tab ul.login li {
+ 	text-align: left;
+  	padding: 0 6px;
+	display: block;
+	float: left;
+	height: 42px;
+  	background: url(./images/tab_m.png) repeat-x 0 0;
+}
+
+.toppanel .tab ul.login li a {
+	color: #15ADFF;
+}
+
+.toppanel .tab ul.login li a:hover {
+	color: white;
+}
+
+.tab .sep {
+	color:#666;
+}
+
+.tab a.openLoginPanel, .tab a.closeLoginPanel {
+	height: 20px;
+	line-height: 20px !important;
+	padding-left: 30px !important;
+	cursor: pointer;
+	display: block;
+	width: 100px;
+	position: relative;
+	top: 11px;
+}
+
+.toppanel .tab a.openLoginPanel {background: url(./images/bt_open.png) no-repeat left 0;}
+.toppanel .tab a.closeLoginPanel {background: url(./images/bt_close.png) no-repeat left 0;}
+.toppanel .tab a:hover.openLoginPanel {background: url(./images/bt_open.png) no-repeat left -19px;}
+.toppanel .tab a:hover.closeLoginPanel {background: url(./images/bt_close.png) no-repeat left -19px;}
+
+.toppanel .tab .spacer {
+	width: 100%; 
+	margin: auto; 
+	height: 40px;
+}
+/* sliding panel */
+.toppanel {
+    position: fixed; /* Panel will overlap content and is not moving*/
+    /*position: absolute;*/ /* Panel will overlap content */
+    /*position: relative;*/ /* Panel will "push" the content down */
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.toppanel .panel {
+	width: 100%;
+	height: 120px;
+	color: #999999;
+	background: #272727;
+	overflow: hidden;
+	position: relative;
+	z-index: 3;
+	display: none;
+}
+
+
+.toppanel .panel div {
+	margin: 5px 0;
+	padding: 0;
+}
+
+.toppanel .panel a {
+	text-decoration: none;
+	color: #15ADFF;
+}
+
+.toppanel .panel a:hover {
+	color: white;
+}
+
+
+.toppanel .panel .content {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 10px;	
+	text-align: left;
+	font-size: 0.85em;
+}
+.panel table {
+	padding: 0px 15px;
+	margin: 0px auto;
+	border: 0;
+	width: 100%;
+	max-width: 1074px;
+	table-layout: fixed;
+}
+.panel table tr > .left_box {
+	padding: 8px 10px 5px;
+	text-align: left;
+	vertical-align: top;
+}
+.panel table tr > .center_box {
+	padding: 8px 20px 5px;
+	text-align: center;
+	vertical-align: top;
+}
+.panel table tr > .right_box {
+	padding: 8px 10px 5px;
+	text-align: right;
+	vertical-align: top;
+}

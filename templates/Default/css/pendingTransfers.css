@@ -1,0 +1,32 @@
+.Pending [title]{
+	cursor: help;
+}
+.Pending a [title]{
+	cursor:pointer;
+}
+.Pending .pendingItems > div{
+	overflow: hidden;
+	height: 25px;
+	margin: 3px 0;
+}
+.Pending .pendingItems > div:first-child{
+	margin:-6px 0 6px 0;
+}
+.Pending .pendingItems > div img{
+	margin: 0 5px;
+	float:left;
+	width:25px;
+	height:25px;
+}
+.Pending .pendingItems > div img:first-child{
+	width:16px;
+	height:16px;
+	float:right;
+	margin-top:4px;
+}
+.Pending .pendingItems > div div{
+	margin-top:6px;
+	height:19px;
+	overflow:hidden;
+	white-space:nowrap;
+}

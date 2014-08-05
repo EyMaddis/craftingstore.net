@@ -1,0 +1,30 @@
+# Get mod_rewrite going
+Options -MultiViews +FollowSymLinks +Indexes
+RewriteEngine On
+RewriteBase /
+
+# changed for github!
+
+	#Subdomain ist nicht secure => umleiten nach minecraftshop.net
+RewriteCond  %{HTTP_HOST}  !^secure\.craftingstore\.net$ [NC]
+RewriteRule ^(.*)$ http://craftingstore.net [L,NC,QSA]
+
+	# Alle mit einer nicht angegebenen IP werden nach / umgeleitet
+RewriteCond %{REMOTE_ADDR} !(1.1.1.1|2.2.2.2) [NC]
+RewriteRule ^(.*)$ http://minecraftshop.net [L,R=302]
+
+	#Zugriff nur auf die angegebenen Dateien erlauben
+RewriteCond %{REQUEST_URI} !^/megaadmin/?$
+RewriteCond %{REQUEST_URI} !^/megaadmin/index.php
+RewriteCond %{REQUEST_URI} !^/megaadmin/link_go.png$
+RewriteCond %{REQUEST_URI} !^/megaadmin/delete.png$
+RewriteRule ^(.*)$ index.php?error=404 [L,QSA]
+
+	# nicht existierende Dateien auf Error 404 umleiten
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^(.*)$ index.php?error=404 [L,QSA]
+
+	# aus www.minecraftshop.net wird minecraftshop.net
+#RewriteCond %{HTTP_HOST}  www\.craftingstore\.net  [NC]
+#RewriteRule ^(.*)$  http://craftingstore.net/$1  [L,R=301,QSA]

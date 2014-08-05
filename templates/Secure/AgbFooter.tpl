@@ -1,0 +1,2 @@
+{$main->prepare('AgbFooter')}
+<div id="companyinfowrapper">{$PROJECTNAME} {$FOOTER_VERSION} | &copy; {$COMPANY} | <a href="{$IMPRINT_URL}">{$IMPRINT}</a> | <a href="{$TOS_URL}">{$TERMS_AND_CONDITIONS}</a></div>

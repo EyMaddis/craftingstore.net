@@ -1,0 +1,114 @@
+2013-01-22 16:42:07: Starting IPN-Request from 178.63.74.19
+
+2013-01-22 16:42:07: Creating new Index-Object
+2013-01-22 16:42:07: Connection to Database: 
+2013-01-22 16:42:07: Creating Listener:
+2013-01-22 16:42:07: Post-Request:
+Array
+(
+    [mc_gross] => 25.00
+    [protection_eligibility] => Ineligible
+    [address_status] => confirmed
+    [payer_id] => 3YV4VTPJR3S3S
+    [tax] => 0.00
+    [address_street] => 1 Main St
+    [payment_date] => 07:42:01 Jan 22, 2013 PST
+    [payment_status] => Pending
+    [charset] => windows-1252
+    [address_zip] => 95131
+    [first_name] => Mathis
+    [mc_fee] => 1.33
+    [address_country_code] => US
+    [address_name] => Mathis Neumann
+    [notify_version] => 3.7
+    [custom] => 8
+    [payer_status] => unverified
+    [business] => seller_1326845272_biz@mathis-neumann.de
+    [address_country] => United States
+    [address_city] => San Jose
+    [quantity] => 1
+    [verify_sign] => AM7B-C1L0.RFs2xEPXS0YqLr151WAqJXATQRF4JKZso4kFRC3iiOPy8A
+    [payer_email] => post_1328129242_per@mathis-neumann.de
+    [txn_id] => 9P665968J48831611
+    [payment_type] => instant
+    [last_name] => Neumann
+    [address_state] => CA
+    [receiver_email] => seller_1326845272_biz@mathis-neumann.de
+    [payment_fee] => 
+    [receiver_id] => 3TGKX3S6DN4BY
+    [pending_reason] => paymentreview
+    [txn_type] => web_accept
+    [item_name] => 
+    [mc_currency] => EUR
+    [item_number] => 
+    [residence_country] => US
+    [test_ipn] => 1
+    [handling_amount] => 0.00
+    [transaction_subject] => 8
+    [payment_gross] => 
+    [shipping] => 0.00
+    [ipn_track_id] => f2a73abdecd1c
+)
+
+2013-01-22 16:42:08: Processing Request...
+
+2013-01-22 16:42:09: Lock Tables
+Check dublikated Entry in Database with TxnId 9P665968J48831611
+
+2013-01-31 16:39:30: Starting IPN-Request from 178.63.74.19
+
+2013-01-31 16:39:30: Creating new Index-Object
+2013-01-31 16:39:30: Connection to Database: 
+2013-01-31 16:39:30: Creating Listener:
+2013-01-31 16:39:30: Post-Request:
+Array
+(
+    [mc_gross] => 25.00
+    [protection_eligibility] => Ineligible
+    [address_status] => confirmed
+    [payer_id] => 3YV4VTPJR3S3S
+    [tax] => 0.00
+    [address_street] => 1 Main St
+    [payment_date] => 07:39:25 Jan 31, 2013 PST
+    [payment_status] => Pending
+    [charset] => windows-1252
+    [address_zip] => 95131
+    [first_name] => Mathis
+    [mc_fee] => 1.33
+    [address_country_code] => US
+    [address_name] => Mathis Neumann
+    [notify_version] => 3.7
+    [custom] => 8
+    [payer_status] => unverified
+    [business] => seller_1326845272_biz@mathis-neumann.de
+    [address_country] => United States
+    [address_city] => San Jose
+    [quantity] => 1
+    [verify_sign] => AQ172F688O0q0XjHQ7oMjKGBSxPQAadvDcK3ByL6JN3NPLGGvaPYBsLf
+    [payer_email] => post_1328129242_per@mathis-neumann.de
+    [txn_id] => 45B96491S5309523K
+    [payment_type] => instant
+    [last_name] => Neumann
+    [address_state] => CA
+    [receiver_email] => seller_1326845272_biz@mathis-neumann.de
+    [payment_fee] => 
+    [receiver_id] => 3TGKX3S6DN4BY
+    [pending_reason] => paymentreview
+    [txn_type] => web_accept
+    [item_name] => 
+    [mc_currency] => EUR
+    [item_number] => 
+    [residence_country] => US
+    [test_ipn] => 1
+    [handling_amount] => 0.00
+    [transaction_subject] => 8
+    [payment_gross] => 
+    [shipping] => 0.00
+    [ipn_track_id] => a05cdc5a6fbc1
+)
+
+2013-01-31 16:39:32: Processing Request...
+
+2013-01-31 16:39:32: Lock Tables
+Check dublikated Entry in Database with TxnId 45B96491S5309523K
+
