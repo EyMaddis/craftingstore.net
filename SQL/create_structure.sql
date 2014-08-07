@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `betamails` (
 `id` int(11) NOT NULL,
   `mail` varchar(255) CHARACTER SET utf8 NOT NULL,
   `invited` int(11) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1766 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -64,7 +64,7 @@ CREATE TABLE IF NOT EXISTS `mc_customcss` (
   `ShopId` int(11) unsigned DEFAULT NULL,
   `TemplateId` int(11) DEFAULT NULL,
   `Css` text CHARACTER SET utf8
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=8 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -81,7 +81,7 @@ CREATE TABLE IF NOT EXISTS `mc_customeraccounts` (
   `Time` int(10) unsigned NOT NULL,
   `PayoutStatus` int(11) DEFAULT NULL,
   `PayoutMail` varchar(128) COLLATE utf8_unicode_ci DEFAULT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=839 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -104,7 +104,7 @@ CREATE TABLE IF NOT EXISTS `mc_customers` (
   `Validated` tinyint(1) DEFAULT NULL,
   `IsLoggedIn` tinyint(1) NOT NULL,
   `ResetPasswordToken` varchar(64) COLLATE utf8_unicode_ci DEFAULT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=456 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -116,7 +116,7 @@ CREATE TABLE IF NOT EXISTS `mc_ench` (
 `Id` int(10) unsigned NOT NULL,
   `ShopId` int(10) unsigned NOT NULL,
   `Name` varchar(45) CHARACTER SET utf8 NOT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Die möglichen Verzauberungen' AUTO_INCREMENT=23 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Die möglichen Verzauberungen' AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -161,7 +161,7 @@ CREATE TABLE IF NOT EXISTS `mc_gamer` (
   `ResetPasswordToken` varchar(64) COLLATE utf8_unicode_ci DEFAULT NULL,
   `LastLang` int(10) unsigned NOT NULL DEFAULT '0',
   `Validated` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Gibt an, ob der Spieler validiert wurde (0: nicht validiert, >0: Zeitpunkt der validiernug)'
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=231 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -180,7 +180,7 @@ CREATE TABLE IF NOT EXISTS `mc_gameraccounts` (
   `InventoryId` int(11) unsigned DEFAULT NULL,
   `ShopId` int(11) unsigned DEFAULT NULL,
   `Revenue` int(11) unsigned NOT NULL DEFAULT '0' COMMENT 'Der Cent-Wert von Difference'
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=857 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -200,7 +200,7 @@ CREATE TABLE IF NOT EXISTS `mc_inventory` (
   `CooldownInterval` enum('i','h','d','w','m') COLLATE utf8_unicode_ci DEFAULT NULL,
   `Locked` bigint(20) unsigned NOT NULL DEFAULT '0',
   `result` mediumtext COLLATE utf8_unicode_ci
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=415 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -217,7 +217,7 @@ CREATE TABLE IF NOT EXISTS `mc_items` (
   `Damage` int(11) DEFAULT NULL COMMENT 'sDamge-Wert',
   `Lore` text CHARACTER SET utf8 NOT NULL COMMENT 'Der Lore-Text',
   `Image` varchar(64) COLLATE utf8_unicode_ci DEFAULT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Die Items, die in Produkten verwendet werden können' AUTO_INCREMENT=412 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Die Items, die in Produkten verwendet werden können' AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -243,7 +243,7 @@ CREATE TABLE IF NOT EXISTS `mc_languages` (
   `Language` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
   `Image` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
   `Tag` char(5) COLLATE utf8_unicode_ci DEFAULT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=3 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -341,7 +341,7 @@ CREATE TABLE IF NOT EXISTS `mc_productGroups` (
   `rgt` int(11) unsigned NOT NULL DEFAULT '0',
   `Description` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `Enabled` tinyint(1) DEFAULT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=97 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -370,7 +370,7 @@ CREATE TABLE IF NOT EXISTS `mc_products` (
   `IsCustom` tinyint(1) NOT NULL DEFAULT '1',
   `CustomCommand` mediumtext COLLATE utf8_unicode_ci,
   `CustomCommandEnd` mediumtext COLLATE utf8_unicode_ci
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=630 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -414,7 +414,7 @@ CREATE TABLE IF NOT EXISTS `mc_shops` (
   `ServerOnline` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT 'Gibt an, dass der Server zur Zeit online sein müsste. Ist dieser Wert auf 0, ist er definitiv offline.',
   `StartingCredit` int(10) unsigned NOT NULL DEFAULT '0',
   `BuyAgreement` mediumtext COLLATE utf8_unicode_ci
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=118 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -427,7 +427,7 @@ CREATE TABLE IF NOT EXISTS `mc_templates` (
   `Label` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
   `Public` tinyint(1) DEFAULT NULL,
   `Directory` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'default'
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -442,7 +442,7 @@ CREATE TABLE IF NOT EXISTS `mc_topmenu` (
   `Link` text COLLATE utf8_unicode_ci NOT NULL,
   `Position` int(11) NOT NULL,
   `Target` varchar(45) COLLATE utf8_unicode_ci NOT NULL DEFAULT '_top'
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=30 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -475,7 +475,7 @@ CREATE TABLE IF NOT EXISTS `z_mc_inventory` (
   `Points` int(11) DEFAULT NULL,
   `isSet` tinyint(1) DEFAULT NULL,
   `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=278 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -716,7 +716,7 @@ ALTER TABLE `z_mc_transfers`
 -- AUTO_INCREMENT for table `betamails`
 --
 ALTER TABLE `betamails`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1766;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `mc_boxlayout`
 --
@@ -726,47 +726,47 @@ MODIFY `Id` int(11) unsigned NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `mc_customcss`
 --
 ALTER TABLE `mc_customcss`
-MODIFY `Id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
+MODIFY `Id` int(11) unsigned NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `mc_customeraccounts`
 --
 ALTER TABLE `mc_customeraccounts`
-MODIFY `Id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=839;
+MODIFY `Id` int(11) unsigned NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `mc_customers`
 --
 ALTER TABLE `mc_customers`
-MODIFY `Id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=456;
+MODIFY `Id` int(11) unsigned NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `mc_ench`
 --
 ALTER TABLE `mc_ench`
-MODIFY `Id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=23;
+MODIFY `Id` int(10) unsigned NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `mc_gamer`
 --
 ALTER TABLE `mc_gamer`
-MODIFY `Id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=231;
+MODIFY `Id` int(11) unsigned NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `mc_gameraccounts`
 --
 ALTER TABLE `mc_gameraccounts`
-MODIFY `Id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=857;
+MODIFY `Id` int(11) unsigned NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `mc_inventory`
 --
 ALTER TABLE `mc_inventory`
-MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=415;
+MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `mc_items`
 --
 ALTER TABLE `mc_items`
-MODIFY `Id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=412;
+MODIFY `Id` int(10) unsigned NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `mc_languages`
 --
 ALTER TABLE `mc_languages`
-MODIFY `Id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `Id` int(11) unsigned NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `mc_messages`
 --
@@ -786,32 +786,32 @@ MODIFY `Id` int(11) unsigned NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `mc_productGroups`
 --
 ALTER TABLE `mc_productGroups`
-MODIFY `Id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=97;
+MODIFY `Id` int(11) unsigned NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `mc_products`
 --
 ALTER TABLE `mc_products`
-MODIFY `Id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=630;
+MODIFY `Id` int(11) unsigned NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `mc_shops`
 --
 ALTER TABLE `mc_shops`
-MODIFY `Id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=118;
+MODIFY `Id` int(11) unsigned NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `mc_templates`
 --
 ALTER TABLE `mc_templates`
-MODIFY `Id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `Id` int(11) unsigned NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `mc_topmenu`
 --
 ALTER TABLE `mc_topmenu`
-MODIFY `Id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=30;
+MODIFY `Id` int(11) unsigned NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `z_mc_inventory`
 --
 ALTER TABLE `z_mc_inventory`
-MODIFY `Id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=278;
+MODIFY `Id` int(11) unsigned NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `z_mc_transferCommands`
 --
