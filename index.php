@@ -1,6 +1,4 @@
 <?php
-header('Location: http://craftingstore.net/it-was-a-pleasure-craftingstore-is-shutting-down/');
-die();
 error_reporting(E_ALL & ~(E_STRICT|E_NOTICE));
 
 try{
