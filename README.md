@@ -18,6 +18,9 @@ Features
 =================
 To see a somewhat recent feature list, visit our old [Bukkit Dev project overview](http://dev.bukkit.org/bukkit-plugins/minecraftshop/).
 
+You can find the sources for the Bukkit plugin here:
+https://github.com/Sehales/craftingstore.net_server_plugin
+
 
 How to use it
 =================
