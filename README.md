@@ -1,5 +1,6 @@
 craftingstore.net
 =================
+> This project has been abandoned and is **not** related to the current software running at CraftingStore.net since 2016. The current website hosted at Craftingstore.net is **built from scratch by another web-developer**, it does not share any code or affiliations with this repository. If you are looking for the website, please visit [CraftingStore.net](https://craftingstore.net)
 
 The sources for the abandon craftingstore.net. It is a almost fully functional shop management system for Bukkit based Minecraft game servers.
 
